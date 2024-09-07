@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Tells Next.js to export a static site
-  basePath: '',      // Optional: base path for subfolder hosting
+  output: 'export', 
+  basePath: '',     
   images: {
-    unoptimized: true,  // Disable image optimization for GitHub Pages
+    unoptimized: true,  
   },
   reactStrictMode: true,
 };

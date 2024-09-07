@@ -101,7 +101,7 @@ const Education = () => {
                                                     {/* <Image src={item.logoSrc} alt={item.title} width={110} height={25} /> */}
                                                     <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
                                                     <div className='flex items-center ml-2 space-x-2 -mt-8'>
-                                                        {item.techStack.map((tech, index) => <Image src={tech} width={item.techStackImgWidth[index]} height={item.techStackImgHeight[index]}/>)}
+                                                        {item.techStack.map((tech, index) => <Image key={index} src={tech} width={item.techStackImgWidth[index]} height={item.techStackImgHeight[index]}/>)}
                                                         </div>
                                                 </div>
                                                 <p className='text-gray-600 text-xs'>{item.description}

@@ -80,7 +80,7 @@ const Skills = () => {
                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center'>
                         {frontEndSkills.map((skillDetail, index) => {
                             return (
-                                <div className='p-6 ease-in duration-300'>
+                                <div key={index} className='p-6 ease-in duration-300'>
                                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                                         <div className='flex flex-col text-white items-center justify-center'>
                                             <h3>{skillDetail.skill}</h3>
@@ -103,7 +103,7 @@ const Skills = () => {
                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center'>
                         {backEndSkills.map((skillDetail, index) => {
                             return (
-                                <div className='p-6 ease-in duration-300'>
+                                <div key={index} className='p-6 ease-in duration-300'>
                                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                                         <div className='flex flex-col items-center justify-center text-white'>
                                             <h3>{skillDetail.skill}</h3>
@@ -126,7 +126,7 @@ const Skills = () => {
                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center'>
                         {toolsEndSkills.map((skillDetail, index) => {
                             return (
-                                <div className='p-6 ease-in duration-300'>
+                                <div key={index} className='p-6 ease-in duration-300'>
                                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                                         <div className='flex flex-col items-center justify-center text-white'>
                                             <h3>{skillDetail.skill}</h3>

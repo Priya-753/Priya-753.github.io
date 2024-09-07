@@ -12,36 +12,35 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@mui/material": "^5.11.6",
     "@next/font": "13.1.5",
+    "aos": "^2.3.4",
     "axios": "^1.2.6",
+    "dotenv": "^10.0.0",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
     "firebase": "^9.16.0",
     "framer-motion": "^8.5.5",
     "next": "13.1.5",
+    "nodemailer": "^6.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-swipeable": "^6.1.2",
     "react-tsparticles": "^2.8.0",
     "react-typed": "^1.2.0",
+    "styled-components": "^5.3.0",
     "tsparticles": "^2.8.0",
-    "typewriter-effect": "^2.19.0",
-    "@chakra-ui/icons": "^1.0.13",
-    "@chakra-ui/react": "^1.6.4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "aos": "^2.3.4",
-    "dotenv": "^10.0.0",
-    "nodemailer": "^6.6.2",
-    "react-swipeable": "^6.1.2",
-    "styled-components": "^5.3.0"
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.4",
+    "typescript": "5.5.4"
   }
 }
