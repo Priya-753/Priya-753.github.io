@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧
         uses: ./.github/workflows/setup-node
 
-      - name: Lint ✅
+      - name: Lint
         run: npm run lint
