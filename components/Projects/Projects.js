@@ -1,9 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import WorkProject from './WorkProject'
-import dsa from '../../public/assets/data-structure.png'
+import python from '../../public/assets/python.png'
+import opencv from '../../public/assets/opencv.png'
 import react from '../../public/assets/react.png'
 import react2048 from '../../public/assets/react2048.png'
+import documentScanner from '../../public/assets/documentScanner.png'
 
 const Projects = () => {
     const projects = [
@@ -17,6 +19,15 @@ const Projects = () => {
             tech: ['React'], 
             photo: [react],
             projectPhoto: react2048
+        },
+        {
+            name: 'Document Scanner',
+            description: 'A Python-based document scanner that processes images to detect and extract documents. This script leverages OpenCV to handle image processing tasks and generates results saved in a specified directory.',
+            githubLink: 'https://github.com/Priya-753/Document-Scanner',
+            projectLink: '',
+            tech: ['Python', 'OpenCV'], 
+            photo: [python, opencv],
+            projectPhoto: documentScanner
         }
     ]
 

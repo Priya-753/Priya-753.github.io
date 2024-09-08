@@ -27,21 +27,6 @@ const WorkProject = ({ project }) => {
     onSwipedRight: () => back()
   });
 
-  const TechStack = ({ techStack }) => {
-    return (
-      <div className="flex flex-wrap gap-2">
-        {techStack.map((tech, index) => (
-          <span
-            key={index}
-            className="bg-blue-500 text-white text-xs font-medium px-2 py-2 rounded-half"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    );
-  };
-
   return (
     <div>
       <div>
@@ -59,18 +44,18 @@ const WorkProject = ({ project }) => {
           </div>
         </div>
         <div>
-          <p>{project.description}</p>
-          <div className="flex ml-25">
-          <a className="mr-2"
+          <p className='py-2 text-gray-600'>{project.description}</p>
+          <div className="flex ml-25 mt-1">
+          <a className="mr-2 py-2 text-gray-600 text-xs"
               href={project.githubLink}
               target={"_blank"}
               rel={"noreferrer"}
             ><FaGithub />Github</a>
-          <a
+          {project.projectLink && (<a className="mr-2 py-2 text-gray-600 text-xs"
               href={project.projectLink}
               target={"_blank"}
               rel={"noreferrer"}
-            ><FaPaperPlane />View</a>
+            ><FaPaperPlane />View</a>)}
             </div>
         </div>
       </div>
