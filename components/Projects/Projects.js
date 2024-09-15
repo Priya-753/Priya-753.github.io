@@ -4,8 +4,12 @@ import WorkProject from './WorkProject'
 import python from '../../public/assets/python.png'
 import opencv from '../../public/assets/opencv.png'
 import react from '../../public/assets/react.png'
+import tensorflow from '../../public/assets/tensorflow.png'
 import react2048 from '../../public/assets/react2048.png'
 import documentScanner from '../../public/assets/documentScanner.png'
+import sudokuSolver from '../../public/assets/sudokuSolver.png'
+import yolo from '../../public/assets/yolo.png'
+import yoloObjectDetection from '../../public/assets/yoloObjectDetection.png'
 
 const Projects = () => {
     const projects = [
@@ -28,6 +32,24 @@ const Projects = () => {
             tech: ['Python', 'OpenCV'], 
             photo: [python, opencv],
             projectPhoto: documentScanner
+        },
+        {
+            name: 'Sudoku Solver',
+            description: 'A Python-based sudoku solver that processes sudoku puzzle images and solves it using OpenCV and Py Sudoku',
+            githubLink: 'https://github.com/Priya-753/Sudoku-Solver',
+            projectLink: '',
+            tech: ['Python', 'OpenCV', 'Tensorflow'], 
+            photo: [python, opencv, tensorflow],
+            projectPhoto: sudokuSolver
+        },
+        {
+            name: 'Object Detection',
+            description: 'A Python-based image detection project that processes images to detect objects using the YOLO (You Only Look Once) model. This script leverages OpenCV and the YOLOv3 model for detecting objects in images and saves the results.',
+            githubLink: 'https://github.com/Priya-753/YOLO-Object-Detection',
+            projectLink: '',
+            tech: ['Python', 'OpenCV', 'YOLO'], 
+            photo: [python, opencv, yolo],
+            projectPhoto: yoloObjectDetection
         }
     ]
 
