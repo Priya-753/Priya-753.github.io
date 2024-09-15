@@ -69,31 +69,12 @@ const Projects = () => {
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ y: [-50, 0], opacity: 1 }}
-                    className='grid md:grid-cols-2 gap-8'>
-
-                    <div className="relative mx-auto py-10 px-5 max-w-4xl">
-                        <div className="py-6 px-10">
-                            {projects.map((project, key) => (
+                    className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                        {projects.map((project, key) => (
                                 <div key={key} data-aos="fade-up" className="mb-12">
                                     <WorkProject project={project} id={key} />
                                 </div>
                             ))}
-                        </div>
-                        {/* 
-                        {userinfo.blogs.visible && (
-                            <div className="bg-currentTheme-secondary">
-                                {blogList && (
-                                    <Carousel currentTheme={currentTheme}>
-                                        {blogList.slice(0, 6).map((blog, key) => (
-                                            <CarouselItem key={key} currentTheme={currentTheme}>
-                                                <BlogCard blog={blog} currentTheme={currentTheme} />
-                                            </CarouselItem>
-                                        ))}
-                                    </Carousel>
-                                )}
-                            </div>
-                        )} */}
-                    </div>
 
                 </motion.div>
             </div>
